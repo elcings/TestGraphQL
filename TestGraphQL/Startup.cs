@@ -35,7 +35,6 @@ namespace TestGraphQL
             {
                 context.UseInMemoryDatabase("DbGraphQL");
             });
-            services.AddScoped<IServiceProvider, DefaultServiceProvider>();
             services.AddSingleton<IDocumentExecuter, DocumentExecuter>();
             services.AddSingleton<BookType>();
             services.AddSingleton<AuthorType>();
